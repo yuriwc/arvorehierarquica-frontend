@@ -100,17 +100,17 @@ const TreeForm: React.FC<TreeFormProps> = ({ onSubmit }) => {
           />
           <div className="flex space-x-2 mt-2">
             <Button
-              color="secondary"
+              color="primary"
               type="button"
-              variant="ghost"
+              variant="flat"
               onClick={() => handleAddChild(currentPath)}
             >
               Criar Filho
             </Button>
             <Button
-              color="warning"
+              color="secondary"
               type="button"
-              variant="ghost"
+              variant="flat"
               onClick={() =>
                 handleAddSibling(index, path.length > 0 ? path : null)
               }
@@ -120,7 +120,7 @@ const TreeForm: React.FC<TreeFormProps> = ({ onSubmit }) => {
             <Button
               color="danger"
               type="button"
-              variant="ghost"
+              variant="flat"
               onClick={() => handleRemoveNode(currentPath)}
             >
               Remover

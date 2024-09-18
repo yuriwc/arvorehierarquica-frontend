@@ -10,8 +10,8 @@ import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: {
-    default: "Arvore Hierarquica",
-    template: `%s - Arvore Hierarquica`,
+    default: "Analisador de Hierarquia de Palavras",
+    template: `%s - Desafio Técnico`,
   },
   description: "Desenvolvido por Yuri Cavalcante",
   icons: {

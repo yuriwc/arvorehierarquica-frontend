@@ -78,12 +78,12 @@ export default function Home() {
       {generatedJson && (
         <div className="mt-6">
           <h2 className="text-xl font-bold">JSON Gerado:</h2>
-          <pre className="bg-gray-200 p-4 rounded">
+          <pre className="bg-gray-200 dark:bg-gray-900 p-4 rounded">
             {JSON.stringify(generatedJson, null, 2)}
           </pre>
           <div className="flex space-x-4 mt-2">
-            <Button onClick={handleCopy}>Copiar JSON</Button>
-            <Button onClick={handleDownload}>Baixar JSON</Button>
+            <Button onClick={handleCopy}>Copiar</Button>
+            <Button onClick={handleDownload}>Baixar</Button>
           </div>
           {copySuccess && <p>{copySuccess}</p>}
         </div>

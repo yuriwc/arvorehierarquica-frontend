@@ -72,10 +72,10 @@ const TreeView: React.FC = () => {
       <TreeNode node={json} />
       <Spacer y={5} />
       <div className="flex flex-row space-x-2">
-        <Button color="secondary" variant="ghost" onPress={downloadJson}>
+        <Button color="secondary" variant="flat" onPress={downloadJson}>
           Baixar JSON
         </Button>
-        <Button color="danger" variant="ghost" onPress={removeJson}>
+        <Button color="danger" variant="flat" onPress={removeJson}>
           Apagar
         </Button>
       </div>

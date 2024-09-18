@@ -12,12 +12,7 @@ import { Input } from "@nextui-org/input";
 import NextLink from "next/link";
 
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  SearchIcon,
-} from "@/components/icons";
+import { GithubIcon, LinkedinIcon, SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -46,7 +41,9 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold text-inherit">Arvore Hierarquica</p>
+            <p className="font-bold text-inherit">
+              Analisador de Hierarquia de Palavras
+            </p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -56,13 +53,14 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href="#">
-            <TwitterIcon className="text-default-500" />
+          <Link
+            isExternal
+            aria-label="Github"
+            href="https://linkedin.com/in/yuriwz"
+          >
+            <LinkedinIcon className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Discord" href="#">
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Github" href="#">
+          <Link isExternal aria-label="Github" href="https://github.com/yuriwc">
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
